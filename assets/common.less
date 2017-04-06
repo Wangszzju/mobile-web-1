@@ -1,0 +1,59 @@
+@c-bg-grey: #f2f2f2;
+@c-word-default: #333;
+@c-word-grey: #666;
+@c-border: #e8e8e8;
+@c-male: #25b6f9;
+@c-female: #ff18cb;
+@c-green: #19a203;
+@c-text-bg-grey: #1c1c1c;
+@c-border-dark: #222;
+@c-yellow: #ffd73c;
+@c-word-9: #999;
+@c-word: #333;
+
+@g-img-base: '//cdn.withme.cn/withme.web.assets.';
+@import '~lesshat/lesshat-prefixed.less';
+
+
+.common(@bgColor: #FFF, @width: 960px) {
+  blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+    margin: 0;
+    padding: 0;
+  }
+  body, button, input, select, textarea {
+    font: 14px/1.5 'PingFangSC-Regular', 'Microsoft YaHei', 'San Francisco','Helvetica Neue',Roboto,arial,sans-serif;
+  }
+  body {
+    background: @bgColor;
+    color: @c-word-default;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: @width;
+  }
+  .page-title {
+    color: @c-word-default;
+    text-decoration: none;
+  }
+  .g-footer {
+    text-align: center;
+    margin: 20px 0 40px;
+  }
+}
+
+
+.gLHeight(@h) {
+  line-height: @h;
+  height: @h;
+}
+
+
+.gLazyImg() {
+  background: #e5e5e5;
+  background-image: url('//cdn.withme.cn/withme.web.assets.common.loading.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+

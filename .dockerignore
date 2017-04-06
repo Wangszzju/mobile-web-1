@@ -1,0 +1,10 @@
+_logs
+build
+node_modules
+tests
+.vscode
+.*
+**/*/*.md
+**/*/*.less
+*.md
+*.log
